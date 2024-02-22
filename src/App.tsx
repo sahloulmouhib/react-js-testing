@@ -1,9 +1,15 @@
 import React from "react";
 import "./App.css";
-import { Counter } from "./components/CounterFinal/Counter";
+import { Example2 } from "./mockingExamples/example2/Example2";
 
 function App() {
-  return <Counter description="My Counter" defaultCount={10} />;
+  return (
+    <Example2
+      onMoney={(n) => {
+        console.log(n);
+      }}
+    />
+  );
 }
 
 export default App;

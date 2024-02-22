@@ -31,7 +31,6 @@ export function Counter({ description, defaultCount }: CounterProps) {
           type="number"
           value={incrementor}
           onChange={(evt) => {
-            console.log("evt.target.value", evt.target.value);
             setIncrementor(parseInt(evt.target.value) || 1);
           }}
         />
