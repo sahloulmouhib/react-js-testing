@@ -1,15 +1,9 @@
 import React from "react";
 import "./App.css";
-import { Example2 } from "./mockingExamples/example2/Example2";
+import { MyDrawer } from "./mockingExamples/example3/Example3";
 
 function App() {
-  return (
-    <Example2
-      onMoney={(n) => {
-        console.log(n);
-      }}
-    />
-  );
+  return <MyDrawer />;
 }
 
 export default App;

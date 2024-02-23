@@ -2,7 +2,9 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { Example2, rows } from "./Example2";
 import React from "react";
 import { DataGrid } from "@mui/x-data-grid";
+// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 jest.mock("@mui/x-data-grid", () => ({
+  ...jest.requireActual("@mui/x-data-grid"),
   DataGrid: jest.fn(() => <div>table</div>),
 }));
 
